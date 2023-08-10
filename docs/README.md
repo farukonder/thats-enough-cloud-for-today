@@ -1,5 +1,6 @@
 # Curiosity
 Being **curious** is an untrainable superpower. It is something that cannot be gained through training or education, but it's just part of who we are.  
+
 Engineering cannot exist without curiosity. We know that needs motivate inventions and even trigger them. Engineering behind technical inventions is based on studies that are executed purely out of curiosity.
 
 Successful developers, architects, and **digital executives** are always curious. Every time, there are things that they can focus on and investigate.
