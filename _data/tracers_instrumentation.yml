@@ -1,0 +1,70 @@
+- language: "C#"
+  library: >-
+    [Zipkin4net](https://github.com/openzipkin/zipkin4net)
+  framework: >-
+    Asp.net core, Owin
+  propagation: Http (B3)
+  transports: Any
+  sampling: "Yes"
+  notes:
+
+- language: Go
+  library: >-
+    [zipkin-go](https://github.com/openzipkin/zipkin-go)
+  framework: >-
+    standard Go middlewares
+  propagation: Http (B3), gRPC (B3)
+  transports: Http (v2), Kafka (v2), Log
+  sampling: "Yes"
+  notes: Uses Zipkin V2 API
+
+- language: Java
+  library: >-
+    [brave](https://github.com/openzipkin/brave)
+  framework: Jersey, RestEASY, JAXRS2, Apache HttpClient, Mysql
+  propagation: Http (B3), gRPC (B3)
+  transports: Http, Kafka, Scribe
+  sampling: "Yes"
+  notes: Java 6 or higher
+
+- language: JavaScript
+  library: >-
+    [zipkin-js](https://github.com/openzipkin/zipkin-js)
+  framework: >-
+    [cujoJS](http://cujojs.com), [express](http://expressjs.com/), [restify](http://restify.com/)
+  propagation: Http (B3)
+  transports: >-
+    [Http, Kafka, Scribe](https://github.com/openzipkin/zipkin-js#transports)
+  sampling: >-
+    Yes
+  notes: >-
+    Uses continuation-local-storage under to hood, so you don't have to pass around an explicit context
+
+- language: Ruby
+  library: >-
+    [zipkin-ruby](https://github.com/openzipkin/zipkin-ruby)
+  framework: >-
+    [Rack](http://rack.github.io/)
+  propagation: Http (B3)
+  transports: Http, Kafka, Scribe
+  sampling: "Yes"
+  notes: lc support. Ruby 2.0 or higher
+
+- language: Scala
+  library: >-
+    [zipkin-finagle](https://github.com/openzipkin/zipkin-finagle)
+  framework: >-
+    [Finagle](https://github.com/twitter/finagle)
+  propagation: Http (B3), Thrift
+  transports: Http, Kafka, Scribe
+  sampling: "Yes"
+  notes: Library is written in Java. Propagation is defined in Finagle itself.
+
+- language: PHP
+  library: >-
+    [zipkin-php](https://github.com/openzipkin/zipkin-php)
+  framework: Any
+  propagation: "B3"
+  transports: "http, log file"
+  sampling: "Yes"
+  notes: V2 native based on brave's model, compatible with PHP 5.6 and PHP 7.x. Check [this](https://github.com/openzipkin/zipkin-php-example) out for an example.

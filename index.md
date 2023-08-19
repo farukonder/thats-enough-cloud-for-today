@@ -1,3 +1,8 @@
+---
+title: Home
+weight: 0
+---
+
 # Curiosity
 Being **curious** is an untrainable superpower. It is something that cannot be gained through training or education, but it's just part of who we are.  
 
@@ -15,3 +20,5 @@ I've decided to write about topics I've explored due to my curiosity or daily ne
 As part of my role (Head of Integration and Platfrom ), I manage engineers who provide platform and integration support to software teams in functional products. While the platform team focuses on providing building blocks, the team also needs to operate like an enterprise architecture unit. Consolidation is a significant necessity in larger companies. in other words focus. Focus also deserves a seperate piece of its own. Maybe more important. we can focus this later. 
 
 [Tech] [A solution for data integration and streaming using EMR and Iceberg](https://farukonder.github.io/thats-enough-cloud-for-today--emr/)
+
+

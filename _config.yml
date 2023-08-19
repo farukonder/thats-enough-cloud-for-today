@@ -1,0 +1,14 @@
+title: Enough
+
+tagline: Thats enough cloud for today
+
+description: >
+  End to end solutions for topics
+
+defaults:
+  -
+    values:
+      layout: page
+      weight: 100   # Used to sort navbar items. Lower weight goes higher on the list.
+
+highlighter: rouge
