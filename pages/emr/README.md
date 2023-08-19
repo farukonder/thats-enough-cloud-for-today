@@ -1,3 +1,10 @@
-# AWS EMR
+---
+title: aws emr
+weight: 1
+layout: post
+date: '23.08.19'
+---
 
-[Enough for Batch with EMR](enough-batch.md)
+[Tech] [A solution for data integration and streaming using EMR and Iceberg](https://farukonder.github.io/thats-enough-cloud-for-today--emr/)
+
+[Tech] [A solution for data integration and streaming using EMR and Iceberg](https://farukonder.github.io/thats-enough-cloud-for-today--emr2/)
