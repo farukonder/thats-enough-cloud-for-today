@@ -1,5 +1,5 @@
 ---
-title: aws emr
+title: devops
 weight: 1
 layout: page
 date: '23.08.19'

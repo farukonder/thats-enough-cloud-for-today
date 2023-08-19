@@ -1,7 +1,7 @@
 ---
 title: aws emr
 weight: 1
-layout: post
+layout: page
 date: '23.08.19'
 ---
 
