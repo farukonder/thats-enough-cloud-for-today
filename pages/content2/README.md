@@ -1,4 +1,2 @@
 # Link 2
-
-
-this is for regular github
+this considered a page so be cought

@@ -5,4 +5,6 @@ layout: page
 date: '23.08.19'
 ---
 
-this is for github pages
+this considered a page so be cought
+
+[content3](./content3.md)
