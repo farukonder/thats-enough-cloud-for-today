@@ -13,8 +13,6 @@ tags:
 
 Data and Streaming using Spark on EMR, ElasticSearch, Iceberg and ..
 
-[This is part of series of](https://farukonder.github.io/thats-enough-cloud-for-today)
-
 The other day, I was curious about whether I should start a composite project on my own to investigate alternative solutions for different kinds of platform needs in my current company. 
 
 Given my responsibility for platform services, I want to delve into specifics such as data-at-rest services, integration, streaming, and NoSQL/NewSQL solutions.
