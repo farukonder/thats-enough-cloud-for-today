@@ -1,8 +1,0 @@
----
-title: devops
-weight: 1
-layout: page
-date: '23.08.19'
----
-
-[Tech] [About devops](https://farukonder.github.io/thats-enough-cloud-for-today--devops/)

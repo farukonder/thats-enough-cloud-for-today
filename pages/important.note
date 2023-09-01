@@ -1,8 +1,0 @@
-if you do not want a page not to be listed in side bar, then put below as header
-
----
-title: Content 2-3
-weight: 1
-layout: post
-date: '23.08.19'
----

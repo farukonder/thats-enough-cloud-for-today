@@ -1,14 +1,35 @@
-title: Enough
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
 
-tagline: Thats enough cloud for today
+# Setup
+title:            Thats 
+tagline:          'Personal <a href="https://farukonder.github.io/" target="_blank">blog</a>'
+description:      'Enough Cloud For Today'
+url:              https://farukonder.github.io/
+baseurl:          '/'
+                  # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
 
-description: >
-  End to end solutions for topics
+author:
+  name:           'Faruk Önder'
+  url:            https://twitter.com/farukonder
 
-defaults:
-  -
-    values:
-      layout: page
-      weight: 100   # Used to sort navbar items. Lower weight goes higher on the list.
+paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
 
-highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+# Sidebar link settings
+sidebar_home_link:  true
+# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+                                # page. If you change your paginate_path,
+                                # set this to the root of the paginate_path
+                                # to enable a separate blog link.
