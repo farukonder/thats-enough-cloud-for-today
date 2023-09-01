@@ -9,7 +9,7 @@ sidebar_link: true
 </p>
 
  
-Engineering cannot exist without curiosity. We know that needs motivate inventions and even trigger them. Engineering behind technical inventions is based on studies that are executed purely out of curiosity.
+Engineering cannot exist without curiosity. We know that actual needs motivate inventions and even trigger them. Engineering behind technical inventions is based on studies that are executed purely out of curiosity.
 
 Successful developers, architects, and **digital executives** are always curious. Every time, there are things that they can focus on and investigate.
 
