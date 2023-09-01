@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Batch: Batch with AWS EMR"
+title: "Batch with Spark on EMR using ElasticSearch, Iceberg etc"
 excerpt_separator: "<!--more-->"
 last_modified_at: 2023-09-01T13:27:01-05:00
 categories:
@@ -12,7 +12,7 @@ tags:
   - Iceberg
 ---
 
-Data and Streaming using Spark on EMR, ElasticSearch, Iceberg and ..
+
 
 The other day, I was curious about whether I should start a composite project on my own to investigate alternative solutions for different kinds of platform needs in my current company. 
 
