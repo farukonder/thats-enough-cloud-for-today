@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Batch: Batch with AWS EMR"
+excerpt_separator: "<!--more-->"
 last_modified_at: 2023-09-01T13:27:01-05:00
 categories:
   - Blog
@@ -18,6 +19,7 @@ The other day, I was curious about whether I should start a composite project on
 Given my responsibility for platform services, I want to delve into specifics such as data-at-rest services, integration, streaming, and NoSQL/NewSQL solutions.
 In my company, there are separate Elasticsearch services for logging and searching purposes for every product. Especially for logging purposes, Elasticsearch services contain valuable data that can be utilized for fraud detection, campaign management, error tracking, monitoring, alerting, and more.
 
+<!--more-->
 The nature of logging data on Elasticsearch is convenient for putting as data producer in my solution as streaming, searching, and transferring, as data on it is both huge and fast-increasing.
 
 In the upcoming series, the plan might vary, but for now, let's begin by outlining and implementing a solution, illustrated as follows:
