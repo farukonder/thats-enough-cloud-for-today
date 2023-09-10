@@ -9,9 +9,11 @@ tags:
   - EKS
 ---
 
-In order aws console to access to eks cluster to created
+after creating EKS cluster, granded user the one created the cluster only. in order the console user other then creator of the cluster to see the details, need to be granted specifiacally. below code allow every aws console user granded to kubernetes. be careful its not for production purpose.  ready only role need to be created for real case. 
 
-either one of the blow
+either one of the below
+
+ - option 1
 
 ```sh
 kubectl edit configmap aws-auth -n kube-system
@@ -27,8 +29,8 @@ mapUsers: |
 
 ```
 
-or 
+ - option 2
 
-`
+```sh 
 eksctl create iamidentitymapping --cluster [cluster-name] --arn arn:aws:iam::[account_id]:role/rolename --group system:masters --username admin
-`
+```
