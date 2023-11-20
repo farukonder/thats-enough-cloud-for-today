@@ -4,7 +4,7 @@ highlighter:      rouge
 
 # Setup
 title:            Thats 
-tagline:          'Personal <a href="https://farukonder.github.io/" target="_blank">blog</a>'
+tagline:          'faruk onder Personal Blog'
 description:      'Enough Cloud For Today'
 url:              https://farukonder.github.io/
 baseurl:          '/'
