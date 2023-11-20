@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Log4m - mule4 custom connector for json logs"
+title: "Log4m - mule4 custom json logger"
 excerpt_separator: "<!--more-->"
 last_modified_at: 2023-11-20T13:27:01-05:00
 categories:
