@@ -14,7 +14,7 @@ tags:
 ---
 
 
-![splash]({{ site.github.url }}/site-content/log4m/log4m.png)
+![splash]({{ site.github.url }}/site-content/log4m/log4m.min.png)
 
 Mule comes with built-in log activity, but it has some limitations. The log4m connector, however, enhances the default features by incorporating additional capabilities.
  - Built-in JSON logger
@@ -29,3 +29,6 @@ Mule comes with built-in log activity, but it has some limitations. The log4m co
  - - HTTP response payload (detailed information in case of HTTP errors, without requiring additional configuration)
 
  [https://github.com/farukonder/mule-log4m-connector](https://github.com/farukonder/mule-log4m-connector)
+
+ *references*
+  - https://blogs.mulesoft.com/dev-guides/how-to-tutorials/json-logging-mule-4/

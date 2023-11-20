@@ -24,7 +24,7 @@ The nature of logging data on Elasticsearch is convenient for putting as data pr
 
 In the upcoming series, the plan might vary, but for now, let's begin by outlining and implementing a solution, illustrated as follows:
 
-![solution overview](/site-content/enough-emr/content.drawio.png)
+![solution overview]({{ site.github.url }}/site-content/enough-emr/content.drawio.png)
 
 
 ## why spark
@@ -135,7 +135,7 @@ docker exec -it local-spark-1  bash
 ```
 
 after that you can experience with Spark locally.
-![loca spark](/site-content/enough-emr/loca-spark-1.png)
+![loca spark]({{ site.github.url }}/site-content/enough-emr/loca-spark-1.png)
 
 ## run on emr
 
@@ -220,7 +220,7 @@ cd job-spark-scala-1
 ```
 
 check the virtual cluster if app is submitted and running. 
-![virtual cluster jobs](/site-content/enough-emr/emr-jobs.png)
+![virtual cluster jobs]({{ site.github.url }}/site-content/enough-emr/emr-jobs.png)
 
 in case an issue during job you would check the details with describe command
 
