@@ -14,7 +14,7 @@ tags:
 ---
 
 
-![splash](../site-content/log4m/log4m.png)
+![splash]({{ site.github.url }}/site-content/log4m/log4m.png)
 
 Mule comes with built-in log activity, but it has some limitations. The log4m connector, however, enhances the default features by incorporating additional capabilities.
  - Built-in JSON logger
