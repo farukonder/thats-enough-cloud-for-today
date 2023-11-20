@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Batch with Spark on EMR using ElasticSearch, Iceberg etc"
+title: "Log4m connector for mule4"
 excerpt_separator: "<!--more-->"
 last_modified_at: 2023-11-20T13:27:01-05:00
 categories:
@@ -13,9 +13,6 @@ tags:
   - elasticsearch
 ---
 
-Log4m connector for mule4
-
-[https://github.com/farukonder/mule-log4m-connector](https://github.com/farukonder/mule-log4m-connector)
 
 ![splash](/site-content/log4m/log4m.png)
 
