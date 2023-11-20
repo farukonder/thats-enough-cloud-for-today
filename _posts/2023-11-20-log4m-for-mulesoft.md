@@ -28,4 +28,4 @@ Mule comes with built-in log activity, but it has some limitations. The log4m co
  - - Error payload (in case of flow errors)
  - - HTTP response payload (detailed information in case of HTTP errors, without requiring additional configuration)"
 
- [github](https://github.com/farukonder/mule-log4m-connector)
+ [https://github.com/farukonder/mule-log4m-connector](https://github.com/farukonder/mule-log4m-connector)
