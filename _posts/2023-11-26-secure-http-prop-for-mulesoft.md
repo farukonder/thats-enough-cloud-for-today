@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Central and secure propertis and hardening in general"
+title: "Easy-Secure-Central properties management and hardening in general"
 excerpt_separator: "<!--more-->"
 last_modified_at: 2023-11-26T13:00:00+03:00
 categories:
@@ -57,6 +57,7 @@ this connector decrypt literals which already encrypted. mule 3 already  has a c
 
 //TODO extend this connector to encrypt clear text based  on a given key and algorithm
 //TODO explain how this connector can be utilized in CI/CD tools
+//TODO extend this page with defining the property file update approaches
 
 **references**
  - https://docs.mulesoft.com/mule-runtime/4.4/custom-configuration-properties-provider
