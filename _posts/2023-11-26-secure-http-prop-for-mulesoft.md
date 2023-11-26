@@ -56,11 +56,9 @@ developed connector decryptes literals which already encrypted and stored in fil
 
 [https://github.com/farukonder/secure-http-properties-connector](https://github.com/farukonder/secure-http-properties-connector)
 
-//TODO extend this connector to encrypt clear text based  on a given key and algorithm (mule 3 already  has a connector for encryption for clear text.)
-
-//TODO explain how this connector can be utilized in CI/CD tools
-
-//TODO extend this page with defining the property file update approaches
+ - **//TODO** extend this connector to encrypt clear text based  on a given key and algorithm (mule 3 already  has a connector for encryption for clear text.)
+ - **//TODO** explain how this connector can be utilized in CI/CD tools
+ - **//TODO** extend this page with defining the property file update approaches
 
 **references**
  - https://docs.mulesoft.com/mule-runtime/4.4/custom-configuration-properties-provider
