@@ -52,7 +52,7 @@ billing.db.pass=![encrypted-prod-passw]
 ```
 
 in mulesoft version 4, this can be managed with help of below custom connector, secure-http-properties-connector.
-developed connector decryptes literals which already encrypted and stored in files or http locations. mule 3 already  has a connector for encryption for clear text.
+developed connector decryptes literals which already encrypted and stored in files or http locations.
 
 [https://github.com/farukonder/secure-http-properties-connector](https://github.com/farukonder/secure-http-properties-connector)
 
