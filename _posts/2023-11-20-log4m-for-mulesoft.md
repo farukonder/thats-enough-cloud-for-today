@@ -2,7 +2,7 @@
 layout: post
 title: "Log4m - mule4 custom json logger"
 excerpt_separator: "<!--more-->"
-last_modified_at: 2023-11-20T13:27:01-05:00
+last_modified_at: 2023-11-20T13:00:00+03:00
 categories:
   - Blog
 tags:
@@ -13,7 +13,7 @@ tags:
   - elasticsearch
   - json
   - connector
-  - custom  
+  - custom connector  
 ---
 
 
