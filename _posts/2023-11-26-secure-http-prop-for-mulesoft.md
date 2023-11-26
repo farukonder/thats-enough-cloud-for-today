@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Secure http prop for mulesoft and hardining properties in general"
+title: "Central and secure propertis and hardening in general"
 excerpt_separator: "<!--more-->"
 last_modified_at: 2023-11-26T13:00:00+03:00
 categories:
