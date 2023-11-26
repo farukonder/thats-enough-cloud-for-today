@@ -18,7 +18,7 @@ tags:
 
 ![splash]({{ site.github.url }}/site-content/secure-http-prop/splash.png)
 
-Among the various alternatives for securing your environment variables, a fundamental approach, without relying on a dedicated tool, is to store variables in property files. This method proves efficient and convenient during development. However, as you transition to production, several additional considerations come into play:
+Among the various alternatives for securing your environment variables, a fundamental approach, without relying on a dedicated tool, is to store variables in property files. This method proves efficient and convenient during development and can be applied to production. However, as you transition to production, several additional considerations come into play:
  - who can set the variables
  - who can see the variables
  - how to manage different environment variables in relation and coordiantion with each other
@@ -31,7 +31,7 @@ One approach would be, without considering vault tools due to some reasons, putt
 
 Using ACLs ensures that properties can only be read within their respective environments.
 
-![alt]({{ site.github.url }}/site-content/secure-http-prop-2.png)
+![alt]({{ site.github.url }}/site-content/secure-http-prop/secure-http-prop-2.png)
 
 To safeguard the values themselves, it is essential to encrypt them to prevent unauthorized access. In certain instances, non-production passwords, especially in development environments, may be kept less complex to expedite development. However, it is evident that production passwords should not follow the same approach. 
 
@@ -51,11 +51,12 @@ billing.db.user=integration_user
 billing.db.pass=![encrypted-prod-passw]
 ```
 
-this connector decrypt literals which already encrypted. mule 3 already  has a connector for encryption for clear text.
+in mulesoft version 4, this can be managed with help of below custom connector, secure-http-properties-connector.
+developed connector decryptes literals which already encrypted and stored in files or http locations. mule 3 already  has a connector for encryption for clear text.
 
 [https://github.com/farukonder/secure-http-properties-connector](https://github.com/farukonder/secure-http-properties-connector)
 
-//TODO extend this connector to encrypt clear text based  on a given key and algorithm
+//TODO extend this connector to encrypt clear text based  on a given key and algorithm (mule 3 already  has a connector for encryption for clear text.)
 //TODO explain how this connector can be utilized in CI/CD tools
 //TODO extend this page with defining the property file update approaches
 
