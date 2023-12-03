@@ -92,8 +92,8 @@ As can be seen above table, 20k batches in for-loop is leading the out of memory
 Given the total volume of 5 billion records, and considering that the durations mentioned above are only for 100,000 records, the overall duration will be 50,000 times longer than the instances described earlier.
 
 max and minimum total durations with given metrics (50/50 max and 2000/1000 min)
-max => 13 min, 35 sec x50k = 40750000 sec = 11319.4 hour  = 471.6 days
-min =>  4 min, 23 sec x50k = 13150000 sec = 3652.7  hour  = 152.1 days
+ * max => 13 min, 35 sec x50k = 40750000 sec = 11319.4 hour  = 471.6 days
+ * min =>  4 min, 23 sec x50k = 13150000 sec = 3652.7  hour  = 152.1 days
 
 as can be seen, choosing the correct number is very important if you need stick to this approach. 
 
