@@ -97,9 +97,9 @@ max and minimum total durations with given metrics (50/50 max and 2000/1000 min)
 
 as can be seen, choosing the correct number is very important if you need stick to this approach. 
 
-abviosly this numbers are not acceptable, the solution will use the 2000/1000 fetch and for-loop-batch-insert number and some parallelizm based on entity types. on top of that there will be some chunk of data for one entitiy based on mod, or data, or seq number or some identifier. than this duration will be decreased to some reasonable numbers. 
+abviosly this numbers are not acceptable, the solution will use the 2000/1000 fetch and for-loop-batch-insert number and some parallelizm based on entity types. on top of that there will be some chunk of data for one entitiy based on mod, or data, or seq number or some identifier. than this duration will be decreased to some reasonable duration. 
 
-lets say we have 5 entity types that can be run parallel, 30 days per entity type for one run, then 20 parallel makes it 1.5 days. too much. we need to digg more alternatives :)
+lets say we have 5 entity types that can be run parallel, 30 days per entity type for one run, adding  20 parallel per run makes it 1.5 days. too much. we need to digg more alternatives :)
 
 when it comes to jvm profiling, below metrics show that the higher the for loop then the higher tenure/oldgen space usage which leads the OOM. in less batch numbers the eden space usage and eventually full GC count are less and in small duration. 
 
