@@ -41,19 +41,19 @@ A more general and hassle-free version solution for this case is streaming the s
 
 ![stream-for-loop]({{ site.github.url }}/site-content/heraclitus/stream-for-loop.png)
 
-As can easyly be understood, the idea is stream the data from source and after iteration write to destination in batches. the batchses on the write hand side is important as  write data a bulk is way faster than one-by-one. 
+As can easyly be understood, the idea is, stream the data from source and after every iteration write to destination in batches. the batchses on the write hand side is important as  write data as bulk is way faster than one-by-one. 
 
 Here, we encounter another significant issue; there is a crucial need for a limit on the bulk insert size array. Without it, we are bound to encounter an out-of-memory exception. 
 
 Also at this point you might ask, why to not stream this data to destination like its coming, due two reasons,
-  -  some destinations, like teradata, have some insert limit on one transaction, so we need to control the numbers of DML
-  -  transform activity in mulesoft is not stream capable. 
+  -  some destinations, like teradata, have some insert limit on one transaction, so we need to control the numbers of DML in every transaction
+  -  transform activity in mulesoft is *not* stream capable. :( 
 
 You might wonder how to stream this when the transform breaks the stream in the middle. The solution lies in using java.util.iterator. Mulesoft converts the source data into an iterator. Then, in each iteration of the for-loop, iterator.next() retrieves the data, and a new list object is created for every for-loop-batch-size. This particular list is subsequently used for bulk insertion into the destination.
 
 There is an obvious limit for bulk insertion, before getting an OOM exception. 
 
-Since we have a huge data need to be handled, we need to work on an estimation to estimate the time to migrate the data. Out of 5 billion records, we had choosen 100k records and collect the metrics as below.
+As we are dealing with a substantial amount of data, it is essential to work on an estimation to determine the time required for the data migration. Out of the 5 billion records, we selected 100,000 records and gathered the following metrics.
 
 |       |       | iteration-1 | iteration-2 | iteration-3 | iteration-4 | iteration-5 |              |              |
 | fetch | for   | duration    | duration    | duration    | duration    | duration    | start        | end          |
