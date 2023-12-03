@@ -33,7 +33,7 @@ But, then, I started thinking, why, why on earth, file system is causing issue a
 
 Moreover, the challenging aspect was that the team attempted to increase worker size vertically, resulting in reduced garbage collection, and consequently, fewer file system purges, leading to *more* instances of "No Space Left On Device." error. its something not expected as logical thinking.
 
-So, the direction to  my team  was, not to use  batch processing for  this case, since my decisions are applied as a standart for all platfrom/product decisins. I do not want a solution which  has some tricky parts that need to be applied in  special position.
+Therefore, I instructed my team not to utilize batch processing for this scenario. As my decisions serve as the standard for all platform/product choices, I prefer solutions that do not involve intricate elements requiring specific handling in unique situations.
 
 From platform engineering perspective, a solution should be applied generally without considering special tunings for exceptional cases.   
 
