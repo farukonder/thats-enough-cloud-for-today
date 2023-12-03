@@ -35,7 +35,8 @@ Moreover, the challenging aspect was that the team attempted to increase worker 
 
 Therefore, I instructed my team not to utilize batch processing for this scenario. As my decisions serve as the standard for all platform/product choices, I prefer solutions that do not involve intricate elements requiring specific handling in unique situations.
 
-From platform engineering perspective, a solution should be applied generally without considering special tunings for exceptional cases.   
+
+**From a platform architecture and engineering perspective, an ideal solution is one that can be universally applied without the need for special tunings or adjustments for exceptional cases. A robust and scalable architecture should be designed to handle a wide range of scenarios and data volumes without relying on bespoke configurations or optimizations for specific instances. This approach promotes consistency, ease of maintenance, and a streamlined implementation process across the entire platform. It ensures that the solution is resilient, performs well under various conditions, and can be efficiently managed without the burden of excessive customization for unique circumstances.**
 
 A more general and hassle-free version solution for this case is streaming the source and iterating over this stream. 
 
