@@ -101,7 +101,7 @@ abviosly this numbers are not acceptable, the solution will use the 2000/1000 fe
 
 lets say we have 5 entity types that can be run parallel, 30 days per entity type for one run, adding  20 parallel per run makes it 1.5 days. too much. we need to digg more alternatives :)
 
-when it comes to jvm profiling, below metrics show that the higher the for loop then the higher tenure/oldgen space usage which leads the OOM. in less batch numbers the eden space usage and eventually full GC count are less and in small duration. 
+when it comes to jvm profiling, below metrics show that the higher the for-loop batch size the higher tenured/oldgen space usage which leads the OOM. in less batch numbers the eden space usage and eventually full GC count are less and in small duration. 
 
 ![jvm profile]({{ site.github.url }}/site-content/heraclitus/jvm-profilng.drawio.png)
 
