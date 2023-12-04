@@ -29,7 +29,7 @@ When the batch processing was used, my team run into an error stated as "No Spac
 
 Solution was, after using batch processing, trigger a full GC explicitly. "java!java::lang::Runtime::getRuntime().gc()". This particular problem was solved and team contined to migrate the data. 
 
-But, then, I started thinking, why, why on earth, file system is causing issue altough it should not be in the picture. After some  digging, found out that batch processing is using ehcache (old school folks might know) behind the scene and objects are piled  up to be processed as  cache objects which backed by file system. And file system is being purged only after the processed cache instances deleted by the GC. I have not checked but most probably finalized() method is being called during destroying object instances. 
+But, then, I started thinking, why, why on earth, file system is causing issue altough it should not be in the picture. After some  digging, found out that batch processing is using ehcache (old school folks might know) behind the scene and objects are piled  up to be processed as  cache objects which backed by file system. And file system is being purged only after the processed cache instances deleted by the GC. I have not checked but most probably finalized() method that being called during destroying java instances in memory invalidates the cache objects and purge the file system. 
 
 Moreover, the challenging aspect was that the team attempted to increase worker size vertically, resulting in reduced garbage collection, and consequently, fewer file system purges, leading to *more* instances of "No Space Left On Device." error. its something not expected as logical thinking.
 
