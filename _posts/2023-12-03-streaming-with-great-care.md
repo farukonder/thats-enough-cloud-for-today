@@ -96,7 +96,7 @@ max and minimum total durations with given metrics (50/50 max and 2000/1000 min)
  * max => 13 min, 35 sec x50k = 40750000 sec = 11319.4 hour  = 471.6 days
  * min =>  4 min, 23 sec x50k = 13150000 sec = 3652.7  hour  = 152.1 days
 
-as can be seen, choosing the correct number is very important if you need stick to this approach. 
+as can be seen, choosing the correct number is very important if you needed to stick to this approach. 
 
 abviosly this numbers are not acceptable, the solution will use the 2000/1000 fetch and for-loop-batch-insert number and some parallelizm based on entity types. on top of that there will be some chunk of data for one entitiy based on mod, or data, or seq number or some identifier. than this duration will be decreased to some reasonable duration. 
 
